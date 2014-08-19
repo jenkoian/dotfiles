@@ -1,0 +1,25 @@
+[credential]
+    helper = osxkeychain
+[user]
+	name = Ian Jenkins
+[core]
+    excludefile = ~/.gitignore
+    autocrlf = input
+    editor = vim 
+[github]
+    user = jenkoian
+[push]
+    default = simple
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+[color]
+	diff = auto
+    ui = auto
+[merge]
+	tool = kdiff3
+[mergetool]
+    keepBackup = false
+[include]
+    path = .gitconfig.local
