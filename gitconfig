@@ -1,7 +1,5 @@
 [credential]
     helper = osxkeychain
-[user]
-	name = Ian Jenkins
 [core]
     excludefile = ~/.gitignore
     autocrlf = input
