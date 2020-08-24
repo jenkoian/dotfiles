@@ -2,8 +2,9 @@
     helper = osxkeychain
 [core]
     excludesfile = ~/.gitignore
-    autocrlf = input
+    #autocrlf = input
     editor = vim 
+	fileMode = false
 [github]
     user = jenkoian
 [push]
@@ -21,3 +22,5 @@
     keepBackup = false
 [include]
     path = .gitconfig.local
+[pull]
+	rebase = true
