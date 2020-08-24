@@ -24,3 +24,6 @@
     path = .gitconfig.local
 [pull]
 	rebase = true
+[user]
+	name = Ian Jenkins
+	email = ian.jenkins@boxuk.com

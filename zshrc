@@ -44,7 +44,7 @@ fi
 [ -s "/Users/ianjenkins/.scm_breeze/scm_breeze.sh" ] && source "/Users/ianjenkins/.scm_breeze/scm_breeze.sh"
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+#. "/usr/local/opt/nvm/nvm.sh"
 
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -59,9 +59,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # added by travis gem
 [ -f /Users/ianjenkins/.travis/travis.sh ] && source /Users/ianjenkins/.travis/travis.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="7257ced690c253eeee127813b43310c0aae52c00"
+export HOMEBREW_GITHUB_API_TOKEN="changeme"
 
-eval "$(symfony-autocomplete)"
+#eval "$(symfony-autocomplete)"
 
 iterm2_print_user_vars() {
     iterm2_set_user_var phpVersion $(php -v | awk '/^PHP/ { print $2 }')
@@ -75,3 +75,4 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Install Ruby Gems to ~/gems
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
